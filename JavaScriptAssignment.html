@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Assignment</title>
+</head>
+
+<body>
+
+    <p id="experience">What is my experience?</p>
+
+    <button onclick="answerExperience()">Answer</button>
+
+    <script>
+        function answerExperience() {
+            document.getElementById("experience").innerHTML = "This is my first JavaScript code";
+        }
+    </script>
+
+</body>
+</html>
+
+<hr>
+
+<h3>Question 2</h3>
+
+<input type="number" id="number">
+<button onclick="doubleNumber()">Double</button>
+
+<p id="result"></p>
+
+<script>
+    function doubleNumber() {
+        let number = document.getElementById("number").value;
+        let answer = number * 2;
+
+        document.getElementById("result").innerHTML = answer;
+    }
+</script>
+
+<hr>
+
+<h3>Question 3</h3>
+
+<input type="number" id="number1">
+<input type="number" id="number2">
+
+<button onclick="calculateAverage()">Calculate Average</button>
+
+<p id="average"></p>
+
+<script>
+    function calculateAverage() {
+        let number1 = document.getElementById("number1").value;
+        let number2 = document.getElementById("number2").value;
+
+        let average = (Number(number1) + Number(number2)) / 2;
+
+        document.getElementById("average").innerHTML = average;
+    }
+</script>
